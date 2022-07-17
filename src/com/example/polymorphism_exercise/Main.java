@@ -2,8 +2,8 @@ package com.example.polymorphism_exercise;
 
 public class Main {
     private void go() {
-        Warrior xena = new Warrior("Xena");
-        Warrior star = new Warrior("Star");
+        Warrior xena = new Warrior("Xena", 95);
+        Warrior star = new Warrior("Star", 97);
 
         xena.setWeapon(new Wand());
         star.setWeapon(new Sword());

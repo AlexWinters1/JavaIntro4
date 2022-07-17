@@ -2,7 +2,7 @@ package com.example.polymorphism_exercise;
 public class Warrior extends Person {
     Weapon weapon;
 
-    public Warrior(String name, int health, Weapon weapon) {
+    public Warrior(String name, int health) {
         super(name, health);
         this.weapon = weapon;
 
@@ -17,8 +17,9 @@ public class Warrior extends Person {
     }
 
     public void attack(Warrior opponent){
-        if (){
-
+        if (health > 0 && weapon != null){
+            System.out.println(name + " is attacking " + opponent.name);
+            System.out.println(opponent.name + " " + opponent.health);
         }
     }
 }
